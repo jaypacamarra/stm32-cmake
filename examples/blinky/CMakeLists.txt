@@ -59,6 +59,7 @@ if(BLINKY_F4_EXAMPLE)
         CMSIS::STM32::F407VG
         STM32::NoSys
     )
+    stm32_add_linker_script(stm32-blinky-f4 PRIVATE F407VG.ld)
     stm32_print_size_of_target(stm32-blinky-f4)
 endif()
 
